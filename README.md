@@ -1,2 +1,1 @@
-# valorant-tracker
-secret stuff XD
+Valorant Tracker

@@ -1,0 +1,16 @@
+.backgroundText {
+    color: black;
+    position: static;
+    line-height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: -3px;
+    font-style: italic;
+
+  }
+  h2 {
+    color: red
+  }
+  h4{
+    color: red;
+  }
