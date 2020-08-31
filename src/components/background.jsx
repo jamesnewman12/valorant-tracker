@@ -24,8 +24,10 @@ export default class Background extends React.Component {
 				 <div class = "backgroundText">
 						Real Time Stat Tracker
 						</div>
+						
 					{}
 					<br/>
+
 					<Slide left>
 					<button
 						className={"work-button " + this.props.bounceIn}
@@ -42,6 +44,10 @@ export default class Background extends React.Component {
 						<SlideText/>
 					</button>
 					</Slide>
+					
+				</div>
+				<div>
+
 				</div>
 			</div>
 		);

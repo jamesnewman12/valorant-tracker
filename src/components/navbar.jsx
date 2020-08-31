@@ -1,5 +1,6 @@
 import React from "react";
 import Background from "./background.jsx";
+import TopNav from "./TopNav.jsx"
 import WOW from "wowjs";
 
 class Navbar extends React.Component {
@@ -43,8 +44,8 @@ class Navbar extends React.Component {
 	render() {
 		return (
 			<div>
-				<Background
-					aboutRef={this.about}/>
+				<TopNav/>
+				<Background/>		
 			</div>
 		);
 	}
