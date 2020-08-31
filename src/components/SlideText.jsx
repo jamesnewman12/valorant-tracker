@@ -1,15 +1,21 @@
 import React from 'react';
 import Slide from 'react-reveal/Slide';
+import ProgressButton from './ProgressButton';
+
 
 class SlideText extends React.Component {
   render() {
     return (
       
       <div>
+         
         <Slide left>
-          <h1>View Your Stats</h1>
+          <h1>Check Your Stats</h1>
         </Slide>
-      </div>
+        <ProgressButton/>
+     
+        </div>
+      
     );
   }
 }
@@ -19,3 +25,4 @@ class SlideText extends React.Component {
 
 
 export default SlideText;
+

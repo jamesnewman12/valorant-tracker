@@ -2,6 +2,8 @@ import React from "react";
 import Background from "./background.jsx";
 import TopNav from "./TopNav.jsx"
 import WOW from "wowjs";
+import ProgressButton from "./ProgressButton.jsx";
+
 
 class Navbar extends React.Component {
 	constructor(props) {
@@ -44,7 +46,8 @@ class Navbar extends React.Component {
 	render() {
 		return (
 			<div>
-				<Background/>		
+				<Background/>
+				
 			</div>
 		);
 	}

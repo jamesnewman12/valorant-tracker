@@ -6,6 +6,9 @@ import WOW from "wowjs";
 import SlideText from "./SlideText";
 import "../styles/background.css";
 
+
+
+
 export default class Background extends React.Component {
   componentDidMount() {
     new WOW.WOW().init();
@@ -18,36 +21,22 @@ export default class Background extends React.Component {
         <div id="stars2" />
         <div id="stars3" />
         <div id="stars4" />
-        <div className="top-container flex">
+        <div className="top-container">
           <img src={valorantlogo} alt="" />
           <br />
           <div class="backgroundText">Real Time Stat Tracker</div>
-
           {}
           <br />
-
           <Slide left>
-            <button
-              className={"work-button " + this.props.bounceIn}
-              data-wow-offset="40"
-              onClick={() => {
-                let node = document.getElementById(
-                  this.props.aboutRef.current.props.id
-                );
-                window.scrollTo({
-                  top: node.offsetTop,
-                  behavior: "smooth",
-                });
-              }}
-            >
               <SlideText />
-            </button>
           </Slide>
         </div>
       </div>
     );
   }
 }
+
+
 
 Background.propTypes = {
   aboutRef: PropTypes.object,
