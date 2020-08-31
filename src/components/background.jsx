@@ -17,6 +17,7 @@ export default class Background extends React.Component {
 				<div id="stars" />
 				<div id="stars2" />
 				<div id="stars3" />
+				<div id="stars4" />
 				<div className="top-container flex">
 				 <img src={valorantlogo} alt=""/>
 				 < br/>

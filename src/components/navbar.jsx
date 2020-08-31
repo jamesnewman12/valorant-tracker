@@ -1,8 +1,6 @@
 import React from "react";
 import Background from "./background.jsx";
-import About from "./about.jsx";
 import WOW from "wowjs";
-import SlideText from "./SlideText.jsx"
 
 class Navbar extends React.Component {
 	constructor(props) {
@@ -47,15 +45,6 @@ class Navbar extends React.Component {
 			<div>
 				<Background
 					aboutRef={this.about}/>
-				<About
-					ref={this.about}
-					id="about-container"
-					bounceLeft={"wow bounceInLeft"}
-					fadeInLeft={"wow fadeInLeft"}
-					fadeInRight={"wow fadeInRight"}
-					fadeIn={"wow fadeIn"}
-					tada={"wow fadeIn"}
-				/>
 			</div>
 		);
 	}
