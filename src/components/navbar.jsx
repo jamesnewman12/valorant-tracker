@@ -44,7 +44,6 @@ class Navbar extends React.Component {
 	render() {
 		return (
 			<div>
-				<TopNav/>
 				<Background/>		
 			</div>
 		);
