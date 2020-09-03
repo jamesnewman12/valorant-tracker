@@ -4,8 +4,9 @@ import valorantlogo from "../img/valorantlogo.png";
 import WOW from "wowjs";
 import Fade from 'react-reveal/Fade';
 
-// import SlideText from "./SlideText";
+
 import "../styles/background.css";
+import { ProgressButton } from "./ProgressButton.jsx";
 
 // import About from "./About.jsx";
 
@@ -33,13 +34,12 @@ export default class Background extends React.Component {
           <div id="logo1" className="logo1">
           <img src={valorantlogo} alt="logo1" 
           />
-          
           <br />
           </div>
           <div id="backgroundText" classname="backgroundText">Real Time Stat Tracker</div>
           {}
+
           </Fade>
-          
 
           <br />
           
