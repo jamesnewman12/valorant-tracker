@@ -1,6 +1,9 @@
 import React from "react";
+import Button from "./Button.jsx";
 import Background from "./background.jsx";
 import WOW from "wowjs";
+
+
 
 
 class Navbar extends React.Component {
@@ -39,12 +42,22 @@ class Navbar extends React.Component {
       behavior: "smooth",
     });
   }
-
+  ButtonCall() {
+    return (
+      <div>
+        
+        
+        
+        {/* <About/> */}
+      </div>
+    );
+  }
   render() {
     return (
       <div>
+        
         <Background />
-        {/* <ProgressButton/> */}
+        
         {/* <About/> */}
       </div>
     );

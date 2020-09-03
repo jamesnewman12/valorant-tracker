@@ -5,7 +5,7 @@ import * as serviceWorker from './serviceWorker';
 import Navbar from "./components/navbar.jsx";
 import 'bootstrap/dist/css/bootstrap.css';
 import "./styles/index.scss";
-export { default as ProgressButton } from './components/ProgressButton';
+
 
 ReactDOM.render(
 	<React.Fragment>
@@ -16,7 +16,3 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
-
-
-
-
