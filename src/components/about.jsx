@@ -14,7 +14,6 @@ export default class About extends React.Component {
 			<div id="stars" />
 			<div id="stars2" />
 			<div id="stars3" />
-			
 			<div
 				id="about-container"
 				className="content-containers container text-center mt-5">

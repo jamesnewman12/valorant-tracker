@@ -1,4 +1,4 @@
-.backgroundText {
+#backgroundText {
     color: black;
     position: static;
     line-height: 40px;
@@ -8,9 +8,5 @@
     font-style: italic;
 
   }
-  h2 {
-    color: red
-  }
-  h4{
-    color: red;
-  }
+
+

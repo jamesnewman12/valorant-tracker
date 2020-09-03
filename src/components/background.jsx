@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Slide from "react-reveal/Slide";
 import valorantlogo from "../img/valorantlogo.png";
 import WOW from "wowjs";
-import SlideText from "./SlideText";
+import Fade from 'react-reveal/Fade';
+
+// import SlideText from "./SlideText";
 import "../styles/background.css";
 
-
-
+// import About from "./About.jsx";
 
 export default class Background extends React.Component {
   componentDidMount() {
@@ -16,27 +16,44 @@ export default class Background extends React.Component {
 
   render() {
     return (
+      
       <div id="my-background" className="background">
         <div id="stars" />
         <div id="stars2" />
         <div id="stars3" />
         <div id="stars4" />
+        <div id="stars5" />
+        <div id="stars6" />
         <div className="top-container">
-          <img src={valorantlogo} alt="" />
+          
+        <Fade>
+        {/* // onMouseEnter={this.someHandler}
+        // onMouseLeave={this.someOtherHandler} */}
+        
+          <div id="logo1" className="logo1">
+          <img src={valorantlogo} alt="logo1" 
+          />
+          
           <br />
-          <div class="backgroundText">Real Time Stat Tracker</div>
+          </div>
+          <div id="backgroundText" classname="backgroundText">Real Time Stat Tracker</div>
           {}
+          </Fade>
+          
+
           <br />
-          <Slide left>
-              <SlideText />
-          </Slide>
+          
+          
+          {/* <About/> */}
+          {/* <Slide left>
+            <SlideText />
+          </Slide> */}
         </div>
       </div>
+      
     );
   }
 }
-
-
 
 Background.propTypes = {
   aboutRef: PropTypes.object,

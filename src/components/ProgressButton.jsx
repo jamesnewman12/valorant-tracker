@@ -1,183 +1,238 @@
-import React from 'react'
+import React from 'react';
 import PropTypes from 'prop-types';
-import createReactClass from 'create-react-class';
+import {
+  onceTransitionEnd,
+  beforeFutureCssLayout,
+  setCssEndEvent,
+} from 'web-animation-club';
+import { AwesomeButton } from '../../index';
+import { getClassName } from '../../helpers/components';
 
+const ROOTELM = 'aws-btn';
+const LOADING_ANIMATION_STEPS = 4;
 
-
-export const STATE = {
-  LOADING: 'loading',
-  DISABLED: 'disabled',
-  SUCCESS: 'success',
-  ERROR: 'error',
-  NOTHING: ''
-}
-
-const ProgressButton = createReactClass({
-    propTypes: {
-    classNamespace: PropTypes.string,
-    controlled: PropTypes.bool,
-    durationError: PropTypes.number,
-    durationSuccess: PropTypes.number,
-    form: PropTypes.string,
-    onClick: PropTypes.func,
-    onError: PropTypes.func,
-    onSuccess: PropTypes.func,
-    state: PropTypes.oneOf(Object.keys(STATE).map(k => STATE[k])),
+export default class AwesomeButtonProgress extends React.Component {
+  static propTypes = {
+    action: PropTypes.func,
+    onPress: PropTypes.func,
+    loadingLabel: PropTypes.string,
+    resultLabel: PropTypes.string,
+    rootElement: PropTypes.node,
+    cssModule: PropTypes.object,
+    children: PropTypes.node,
+    disabled: PropTypes.bool,
+    size: PropTypes.string,
     type: PropTypes.string,
-    shouldAllowClickOnLoading: PropTypes.bool
-  },
+    fakePress: PropTypes.bool,
+    releaseDelay: PropTypes.number,
+  };
 
-  getDefaultProps () {
-    return {
-      classNamespace: 'pb-',
-      controlled: false,
-      durationError: 1200,
-      durationSuccess: 500,
-      onClick () {},
-      onError () {},
-      onSuccess () {},
-      shouldAllowClickOnLoading: false
-    }
-  },
+  static defaultProps = {
+    action: null,
+    onPress: null,
+    rootElement: null,
+    loadingLabel: 'Wait..',
+    resultLabel: 'Success!',
+    disabled: false,
+    cssModule: null,
+    fakePress: false,
+    children: null,
+    size: null,
+    type: null,
+    releaseDelay: 500,
+  };
 
-  getInitialState () {
-    return {
-      currentState: this.props.state || STATE.NOTHING
-    }
-  },
-
-  componentWillReceiveProps (nextProps) {
-    if (nextProps.state === this.props.state) { return }
-    switch (nextProps.state) {
-      case STATE.SUCCESS:
-        this.success()
-        return
-      case STATE.ERROR:
-        this.error()
-        return
-      case STATE.LOADING:
-        this.loading()
-        return
-      case STATE.DISABLED:
-        this.disable()
-        return
-      case STATE.NOTHING:
-        this.notLoading()
-        return
-      default:
-        return
-    }
-  },
-
-  componentWillUnmount () {
-    clearTimeout(this._timeout)
-  },
-
-  render () {
-    const {
-      className,
-      classNamespace,
-      children,
-      type,
-      form,
-      durationError, // eslint-disable-line no-unused-vars
-      durationSuccess, // eslint-disable-line no-unused-vars
-      onClick, // eslint-disable-line no-unused-vars
-      onError, // eslint-disable-line no-unused-vars
-      onSuccess, // eslint-disable-line no-unused-vars
-      state, // eslint-disable-line no-unused-vars
-      shouldAllowClickOnLoading, // eslint-disable-line no-unused-vars
-      controlled, // eslint-disable-line no-unused-vars
-      ...containerProps
-    } = this.props
-
-    containerProps.className = classNamespace + 'container ' + this.state.currentState + ' ' + className
-    containerProps.onClick = this.handleClick
-    return (
-      <div {...containerProps}>
-        <button disabled={state === STATE.DISABLED} type={type} form={form} className={classNamespace + 'button'}>
-          <span>{children}</span>
-          <svg className={classNamespace + 'progress-circle'} viewBox='0 0 41 41'>
-            <path d='M38,20.5 C38,30.1685093 30.1685093,38 20.5,38' />
-          </svg>
-          <svg className={classNamespace + 'checkmark'} viewBox='0 0 70 70'>
-            <path d='m31.5,46.5l15.3,-23.2' />
-            <path d='m31.5,46.5l-8.5,-7.1' />
-          </svg>
-          <svg className={classNamespace + 'cross'} viewBox='0 0 70 70'>
-            <path d='m35,35l-9.3,-9.3' />
-            <path d='m35,35l9.3,9.3' />
-            <path d='m35,35l-9.3,9.3' />
-            <path d='m35,35l9.3,-9.3' />
-          </svg>
-        </button>
-      </div>
-    )
-  },
-
-  handleClick (e) {
-    const shouldAllowClick = (this.props.shouldAllowClickOnLoading ||
-        this.state.currentState !== STATE.LOADING) &&
-        this.state.currentState !== STATE.DISABLED
-    if (this.props.controlled && shouldAllowClick) {
-      this.props.onClick(e)
-      return true
-    }
-
-    if (shouldAllowClick) {
-      this.loading()
-      const ret = this.props.onClick(e)
-      this.handlePromise(ret)
-    } else {
-      e.preventDefault()
-    }
-  },
-
-  handlePromise (promise) {
-    if (promise && promise.then && promise.catch) {
-      promise
-        .then(() => {
-          this.success()
-        })
-        .catch((err) => {
-          this.error(null, err)
-        })
-    }
-  },
-
-  loading () {
-    this.setState({currentState: STATE.LOADING})
-  },
-
-  notLoading () {
-    this.setState({currentState: STATE.NOTHING})
-  },
-
-  enable () {
-    this.setState({currentState: STATE.NOTHING})
-  },
-
-  disable () {
-    this.setState({currentState: STATE.DISABLED})
-  },
-
-  success (callback, dontRemove) {
-    this.setState({currentState: STATE.SUCCESS})
-    this._timeout = setTimeout(() => {
-      if (!dontRemove) { this.setState({currentState: STATE.NOTHING}) }
-      callback = callback || this.props.onSuccess
-      if (typeof callback === 'function') { callback() }
-    }, this.props.durationSuccess)
-  },
-
-  error (callback, err) {
-    this.setState({currentState: STATE.ERROR})
-    this._timeout = setTimeout(() => {
-      this.setState({currentState: STATE.NOTHING})
-      callback = callback || this.props.onError
-      if (typeof callback === 'function') { callback(err) }
-    }, this.props.durationError)
+  constructor(props) {
+    super(props);
+    this.rootElement = props.rootElement || ROOTELM;
+    this.animationStage = 0;
+    this.loading = false;
+    this.timeout = null;
+    this.state = {
+      loadingEnd: false,
+      loadingStart: false,
+      loadingError: false,
+      errorLabel: null,
+      blocked: false,
+      active: false,
+    };
   }
-})
 
-export default ProgressButton
+  UNSAFE_componentWillReceiveProps(newProps) {
+    this.checkFakePress(newProps);
+  }
+
+  componentWillUnmount() {
+    if (this.timeout) {
+      clearTimeout(this.timeout);
+    }
+  }
+
+  getRootClassName() {
+    const { rootElement } = this;
+    const { loadingStart, loadingEnd, loadingError } = this.state;
+    const className = [
+      (loadingStart && `${rootElement}--start`) || null,
+      (loadingEnd && `${rootElement}--end`) || null,
+      (loadingError && `${rootElement}--errored`) || null,
+      `${rootElement}--progress`,
+    ];
+    return className
+      .join(' ')
+      .trim()
+      .replace(/[\s]+/gi, ' ');
+  }
+
+  checkFakePress(newProps) {
+    if (newProps.fakePress !== this.props.fakePress) {
+      if (newProps.fakePress === true) {
+        this.action();
+      }
+    }
+  }
+
+  endLoading(state = true, errorLabel = null) {
+    this.setState({
+      loadingEnd: true,
+      loadingError: !state,
+      errorLabel,
+    });
+    this.animationStage = 1;
+  }
+
+  startLoading() {
+    this.loading = true;
+    this.setState(
+      {
+        blocked: true,
+        active: true,
+      },
+      () => {
+        /*
+        To avoid the button eventual flickering I've changed the display strategy
+        for that to work in a controlled way we need to set the loadingStart
+        at least two painting cycle ahead
+      */
+        beforeFutureCssLayout(2, () => {
+          this.setState({
+            loadingStart: true,
+          });
+        });
+      }
+    );
+  }
+
+  clearLoading(callback) {
+    this.loading = false;
+    this.setState(
+      {
+        loadingStart: false,
+        loadingEnd: false,
+        active: false,
+      },
+      callback
+    );
+  }
+
+  clearStagedWrapperAnimation = () => {
+    this.timeout = setTimeout(() => {
+      if (typeof window !== 'undefined') {
+        window.requestAnimationFrame(() => {
+          this.clearLoading(() => {
+            setTimeout(() => {
+              this.setState({
+                blocked: false,
+                loadingError: false,
+                errorLabel: null,
+              });
+            }, 500);
+          });
+        });
+      }
+    }, this.props.releaseDelay);
+  };
+
+  action = () => {
+    const action = this.props.action || this.props.onPress;
+    this.startLoading();
+    onceTransitionEnd(this.content).then(() => {
+      if (action) {
+        action(this.content, this.endLoading.bind(this));
+      }
+      setCssEndEvent(this.content, 'transition', {
+        tolerance: LOADING_ANIMATION_STEPS,
+      }).then(() => {
+        this.clearStagedWrapperAnimation();
+      });
+    });
+  };
+
+  moveEvents() {
+    const events = {
+      onMouseDown: event => {
+        if (
+          this.props.disabled === true ||
+          this.loading === true ||
+          this.state.blocked === true ||
+          (event && event.nativeEvent.which !== 1)
+        ) {
+          return;
+        }
+        this.loading = true;
+      },
+      onMouseUp: event => {
+        if (
+          this.props.disabled === true ||
+          this.loading === true ||
+          this.state.blocked === true
+        ) {
+          event.preventDefault();
+          event.stopPropagation();
+          return;
+        }
+        this.action();
+      },
+    };
+    return events;
+  }
+
+  render() {
+    const {
+      children,
+      size,
+      cssModule,
+      loadingLabel,
+      resultLabel,
+      action,
+      type,
+      ...extra
+    } = this.props;
+
+    const { active, blocked, errorLabel } = this.state;
+
+    return (
+      <AwesomeButton
+        size={size}
+        type={type}
+        className={this.getRootClassName()}
+        action={this.action}
+        cssModule={cssModule}
+        active={active}
+        blocked={blocked}
+        {...this.moveEvents()}
+        {...extra}
+      >
+        <span
+          ref={content => {
+            this.content = content;
+          }}
+          data-loading={loadingLabel || null}
+          data-status={errorLabel || resultLabel || null}
+          className={getClassName(`${this.rootElement}__progress`, cssModule)}
+        >
+          <span>{children}</span>
+        </span>
+      </AwesomeButton>
+    );
+  }
+}

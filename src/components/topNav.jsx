@@ -46,7 +46,7 @@ class topNav extends React.Component{
                                     <background />
                                 </Route>
                                 <Route path="/about-us">
-                                    {/* <AboutUs /> */}
+                                    {}
                                 </Route>
                                 <Route path="/contact-us">
                                     {/* <ContactUs /> */}
