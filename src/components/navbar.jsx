@@ -1,6 +1,6 @@
 import React from "react";
 import Background from "./background.jsx";
-import TopNav from "./TopNav.jsx"
+import TopNav from "./topNav.jsx"
 import WOW from "wowjs";
 import ProgressButton from "./ProgressButton.jsx";
 
