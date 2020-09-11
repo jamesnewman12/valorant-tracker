@@ -4,8 +4,8 @@ import valorantlogo from "../img/valorantlogo.png";
 import WOW from "wowjs";
 import Fade from "react-reveal/Fade";
 import Button from "./Button";
+import OverridesCss from "./Button";
 import "../styles/background.css";
-
 // import About from "./About.jsx";
 
 export default class Background extends React.Component {
@@ -33,15 +33,11 @@ export default class Background extends React.Component {
             </div>
           </Fade>
           <Fade>
-            <Button
-            ></Button>
+            <Button>
+              <OverridesCss />
+            </Button>
           </Fade>
           <br />
-
-          {/* <About/> */}
-          {/* <Slide left>
-            <SlideText />
-          </Slide> */}
         </div>
       </div>
     );
