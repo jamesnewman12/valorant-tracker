@@ -1,6 +1,7 @@
 import React from "react";
 import Background from "./background.jsx";
 import WOW from "wowjs";
+import StartButton from "./StartButton";
 
 class Valorant extends React.Component {
   constructor(props) {
@@ -45,6 +46,7 @@ class Valorant extends React.Component {
     return (
       <div>
         <Background />
+        <StartButton />
         {/* <About/> */}
       </div>
     );
