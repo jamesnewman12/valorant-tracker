@@ -2,7 +2,7 @@ import React from "react";
 import Background from "./background.jsx";
 import WOW from "wowjs";
 
-class Navbar extends React.Component {
+class Valorant extends React.Component {
   constructor(props) {
     super(props);
     this.about = React.createRef();
@@ -51,4 +51,4 @@ class Navbar extends React.Component {
   }
 }
 
-export default Navbar;
+export default Valorant;
