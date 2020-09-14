@@ -1,45 +1,17 @@
-import React from 'react';
+import React from "react";
 import PropTypes from "prop-types";
 import valorantlogo from "../img/valorantlogo.png";
 import "../styles/background.css";
 import Button from "@material-ui/core/Button";
 import About from "./About.jsx";
-import ReactDOM from 'react-dom';
-
-
+import ReactDOM from "react-dom";
 
 export default class Main extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {isLoggedIn: false};
-  //   this.handleClick = this.handleClick.bind(this);
-
-  // }
-   
-  // handleClick() {
-  //   this.setState({isLoggedIn: true});
-  // }
-
-  // handleLogoutClick() {
-  //   this.setState({isLoggedIn: false});
-  // }
-
-
   handleClick(event) {
     console.log("clicked");
   }
 
   render() {
-    // const isLoggedIn = this.state.isLoggedIn;
-    // let Button;
-
-    // if (isLoggedIn) {
-    //   Button = <Button onClick={this.handleLogoutClick} />;
-    // } else {
-    //   Button = <Button onClick={this.handleClick} />;
-    
-
-
     return (
       <div id="my-background" className="background">
         <div id="stars" />
@@ -53,7 +25,6 @@ export default class Main extends React.Component {
             <Button
               onClick={this.handleClick}
               style={{ backgroundColor: "transparent" }}
-              // {...(this.state.isAboutVisible ? <About /> : null)}
             >
               <div id="picture2" className="picture2">
                 <img src={valorantlogo} alt="logo1" />
@@ -68,5 +39,3 @@ export default class Main extends React.Component {
     );
   }
 }
-
- 
