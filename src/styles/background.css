@@ -11,12 +11,12 @@
     position: bottom;
     margin-top: 200px;
 }
-#backgroundText:hover {
-background-color: red;
-}
-#picture2:hover {
+
+Button:hover {
     background-color:red !important;
     color: #FFF;
+    opacity: 70%;
+    border-radius: 40px;
     
  }
  

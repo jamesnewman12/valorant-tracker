@@ -28,6 +28,9 @@ export default class Main extends React.Component {
     });
   }
 
+  componentWillMount(){
+  }
+
 
   render() {
     return (
@@ -41,9 +44,6 @@ export default class Main extends React.Component {
         <div className="top-container">
 
 
-
-
-<div id="picture2" className="picture2">
       
       <Button><img src={valorantlogo} alt="logo1" 
       style={{ backgroundColor: "transparent" }}
@@ -51,15 +51,17 @@ export default class Main extends React.Component {
         </img>
       {this.state.showComponent ?
          <About /> :
-         null
-      }
-      </Button>
-      <div id="backgroundText" className="backgroundText">
+         null     
+  }
+    <div id="backgroundText" className="backgroundText">
       Real Time Stat Tracker
     </div>
+  </Button>
 
-</div>
-</div>
-</div>
+      </div>
+      </div>
+
+
+    
     )}
 }
