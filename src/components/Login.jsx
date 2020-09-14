@@ -1,23 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/background.css";
-class Login extends React.Component {
-  render() {
-    return (
-      <div>
-      <div className="background">
-      <div id="stars" />
-      <div id="stars2" />
-      <div id="stars3" />
-      <div id="stars4" />
-      <div id="stars5" />
-      <div id="stars6" />
-      <div id="stars7" />
-          <h1 className="loginHeader">This is the login page </h1>
-          <h1 className="loginHeader"> &copy; 2020</h1>
-        </div>
-        </div>
-    );
-  }
-}
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 
-export default Login;
+export default function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  function validateForm() {
+    return email.length > 0 && password.length > 0;
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+  }
+
+  return (
+    <div className="Login">
+      <form onSubmit={handleSubmit}>
+        <FormGroup controlId="email" bsSize="large">
+          <ControlLabel>Email</ControlLabel>
+          <FormControl
+            autoFocus
+            type="email"
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+          />
+        </FormGroup>
+        <FormGroup controlId="password" bsSize="large">
+          <ControlLabel>Password</ControlLabel>
+          <FormControl
+            value={password}
+            onChange={e => setPassword(e.target.value)}
+            type="password"
+          />
+        </FormGroup>
+        <Button block bsSize="large" disabled={!validateForm()} type="submit">
+          Login
+        </Button>
+      </form>
+      <Button
+  className="button2"
+  onClick={(event) => (window.location.href = "/home")}>
+  <Link to="/login" className="button">Back to home</Link>
+</Button>
+    </div>
+  );
+}

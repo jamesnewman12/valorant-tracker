@@ -27,7 +27,13 @@ Button:hover {
  .loginHeader {
      color: white;
      margin: auto;
-     padding-left: 800px;
+    
+     text-align: center;
+ }
+ 
+ .button2 {
+     text-align: center;
+     background-color: transparent;
  }
 
 
