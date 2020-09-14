@@ -21,14 +21,7 @@ export default function BasicExample() {
           <li>
             <Link to="/stats">Stats</Link>
           </li>
-          <li>
-            <Link to="/home">Home</Link>
-          </li>
-          <li>
-            <Link to="/login">Login</Link>
-          </li>
         </ul>
-        
         {/*
           A <Switch> looks through all its children <Route>
           elements and renders the first one whose path
