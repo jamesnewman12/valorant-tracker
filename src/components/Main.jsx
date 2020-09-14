@@ -18,8 +18,8 @@ export default class Main extends React.Component {
       super();
       this.state = {
         name: "React",
-        showHideDemo1: false,
-        showHideDemo2: false
+        showMainComponent: false,
+        showAboutComponent: false
       };
       this.hideComponent = this.hideComponent.bind(this);
   }
@@ -27,11 +27,11 @@ export default class Main extends React.Component {
   hideComponent(name) {
     console.log(name);
     switch (name) {
-      case "showHideDemo1":
-        this.setState({ showHideDemo1: !this.state.showHideDemo1 });
+      case "showMainComponent":
+        this.setState({ showMainComponent: !this.state.showMainComponent });
         break;
-      case "showHideDemo2":
-        this.setState({ showHideDemo2: !this.state.showHideDemo2 });
+      case "showAboutComponent":
+        this.setState({ showAboutComponent: !this.state.showAboutComponent });
         break;
       default:
         
@@ -39,14 +39,13 @@ export default class Main extends React.Component {
   }
 
   render() {
-    const { showHideMain, showHideDemo2 } = this.state;
+    const { showHideMain, showAboutComponent } = this.state;
     return (
       <div>
       <div>
         {showHideMain && <Main />}
-        {showHideDemo2 && <About />}
-        <Button onClick={() => this.hideComponent("showHideMain")}>
-        </Button>
+        {showAboutComponent && <About />}
+    
         </div>
 
         
@@ -59,9 +58,10 @@ export default class Main extends React.Component {
         <div id="stars6" />
         <div id="stars7" />
         <div className="top-container">
-      <button onClick={() => this.hideComponent("showHideDemo2")}>
+      <Button className="button"
+       onClick={() => this.hideComponent("showAboutComponent")}>
         <img src={valorantlogo} alt="logo1" />
-  </button>
+  </Button>
 
       </div>
       </div>
