@@ -3,9 +3,10 @@ import PropTypes from "prop-types";
 import valorantlogo from "../img/valorantlogo.png";
 import "../styles/background.css";
 import Button from "@material-ui/core/Button";
-import About from "./About.jsx";
+import Stats from "./Stats.jsx";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 
 export default class Main extends React.Component {
   constructor() {
@@ -37,7 +38,7 @@ export default class Main extends React.Component {
       <div>
         <div>
           {showHideMain && <Main />}
-          {showAboutComponent && <About />}
+          {showAboutComponent && <Stats />}
         </div>
         <div id="my-background" className="background">
           <div id="stars" />

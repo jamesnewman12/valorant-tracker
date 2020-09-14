@@ -6,7 +6,7 @@ import browser from "../img/browser.png";
 import PropTypes from "prop-types";
 import "../styles/background.css";
 
-export default class About extends React.Component {
+export default class Stats extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -192,7 +192,7 @@ export default class About extends React.Component {
   }
 }
 
-About.propTypes = {
+Stats.propTypes = {
   bounceLeft: PropTypes.string,
   fadeInLeft: PropTypes.string,
   fadeInRight: PropTypes.string,

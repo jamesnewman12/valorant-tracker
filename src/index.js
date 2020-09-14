@@ -1,15 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
 import "./styles/index.scss";
-import App from "./App.jsx"
-import Main from "./components/Main.jsx";
-import { render } from "react-dom";
+import App from "./Router.jsx";
 
-render(
+ReactDOM.render(
   <div>
-   <Main/>
+   <App/>
   </div>, document.getElementById('root'));
 serviceWorker.unregister();
