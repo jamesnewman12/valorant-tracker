@@ -1,14 +1,25 @@
-
 #backgroundText {
     color: black;
-    position: static;
+    position: fixed;
     line-height: 40px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 35px;
     letter-spacing: -2.5px;
     font-style: italic;
+    margin: auto;
+    position: bottom;
+    margin-top: 200px;
 }
+#backgroundText:hover {
+background-color: red;
+}
+#picture2:hover {
+    background-color:red !important;
+    color: #FFF;
+    
+ }
+ 
 
 
 

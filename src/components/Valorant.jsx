@@ -1,14 +1,12 @@
 import React from "react";
-import Background from "./background.jsx";
+import Main from "./Main.jsx"
 import WOW from "wowjs";
-import StartButton from "./StartButton";
 
 class Valorant extends React.Component {
   constructor(props) {
     super(props);
     this.about = React.createRef();
     this.projects = React.createRef();
-
     this.scrolling = this.scrolling.bind(this);
   }
 
@@ -40,14 +38,12 @@ class Valorant extends React.Component {
     });
   }
   ButtonCall() {
-    return <div>{/* <About/> */}</div>;
+    return <div></div>;
   }
   render() {
     return (
       <div>
-        <Background />
-        <StartButton />
-        {/* <About/> */}
+        <Main />
       </div>
     );
   }
