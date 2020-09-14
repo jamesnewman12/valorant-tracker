@@ -8,10 +8,8 @@ import App from "./App.jsx"
 import Main from "./components/Main.jsx";
 import { render } from "react-dom";
 
-
-
 render(
   <div>
-  <App />, <Main/>
+   <Main/>
   </div>, document.getElementById('root'));
 serviceWorker.unregister();
