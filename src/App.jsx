@@ -30,8 +30,7 @@ export default class App extends Main {
     const { showHideDemo1, showHideDemo2 } = this.state;
     return (
       <div>
-        {showHideDemo1 && <Main />}
-        {showHideDemo2 && <About />}
+        <Main/>
 
         {/* <button onClick={() => this.hideComponent("showHideDemo1")}>
               Click to show landing page

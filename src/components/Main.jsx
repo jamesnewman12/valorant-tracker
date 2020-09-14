@@ -29,11 +29,10 @@ export default class Main extends React.Component {
   }
 
   render() {
-    const { showHideMain, showAboutComponent } = this.state;
+    const { showAboutComponent } = this.state;
     return (
       <div>
         <div>
-          {showHideMain && <Main />}
           {showAboutComponent && <Stats />}
         </div>
         <div className="background">
