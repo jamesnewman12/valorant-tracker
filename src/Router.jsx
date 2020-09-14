@@ -30,7 +30,7 @@ export default function BasicExample() {
           of them to render at a time
         */}
         <Switch>
-          <Route exact path="/home">
+          <Route exact path="/">
             <Main />
           </Route>
           <Route path="/stats">

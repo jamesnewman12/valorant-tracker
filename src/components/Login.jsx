@@ -77,7 +77,7 @@ export default function Login() {
         <br />
         <Button
           className="loginButton"
-          onClick={(event) => (window.location.href = "/home")}
+          onClick={(event) => (window.location.href = "/")}
         >
           <Link to="/login" className="button">
             Back to home
