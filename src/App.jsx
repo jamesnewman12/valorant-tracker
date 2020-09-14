@@ -7,7 +7,7 @@ export default class App extends Main {
   constructor() {
     super();
     this.state = {
-      name: "React",
+      name: "ValorantApp",
       showHideDemo1: false,
       showHideDemo2: false,
     };

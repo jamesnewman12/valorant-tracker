@@ -11,7 +11,7 @@ export default class Main extends React.Component {
   constructor() {
     super();
     this.state = {
-      name: "React",
+      name: "ValorantApp",
       showMainComponent: false,
       showAboutComponent: false,
     };
@@ -50,8 +50,7 @@ export default class Main extends React.Component {
           <div className="top-container">
             <Button
               className="button"
-              onClick={() => this.hideComponent("showAboutComponent")}
-            >
+              onClick={() => this.hideComponent("showAboutComponent")}>
               <img src={valorantlogo} alt="logo1" />
             </Button>
           </div>
