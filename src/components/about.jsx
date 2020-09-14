@@ -7,6 +7,12 @@ import PropTypes from "prop-types";
 import "../styles/background.css";
 
 export default class About extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      name: "React"
+    };
+  }
   render() {
     return (
       <div id="my-background" className="background">

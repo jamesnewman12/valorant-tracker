@@ -3,7 +3,7 @@ import Main from './components/Main.jsx';
 
 
 
-export default class App extends React.Component {
+export default class holla extends React.Component {
   render() {
     return (
       

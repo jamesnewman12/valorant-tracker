@@ -14,26 +14,38 @@ import {
 
 
 export default class Main extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
-      showComponent: false,
+      name: "React",
     };
-    this._onButtonClick = this._onButtonClick.bind(this);
-  }
-  
-  _onButtonClick() {
-    this.setState({
-      showComponent: true,
-    });
   }
 
-  componentWillMount(){
+  hideComponent(name) {
+    switch (name) {
+      case "showHideMain":
+        this.setState({ showHideMain: !this.state.showHideMain  });
+        break;
+      case "showComponent":
+        this.setState({ showComponent: !this.state.showComponent  });
+        break;
+        default:
+         
+    }
   }
 
 
   render() {
+    const { showHideMain, showComponent } = this.state;
     return (
+      <div>
+      <div>
+        {showHideMain && <Main />}
+        <Button onClick={() => this.hideComponent("showHideMain")}>
+        </Button>
+        </div>
+
+        
        <div id="my-background" className="background">
         <div id="stars" />
         <div id="stars2" />
@@ -53,11 +65,8 @@ export default class Main extends React.Component {
          null     
   }
   </Button>
-
       </div>
       </div>
-
-
-    
+      </div>
     )}
 }
