@@ -1,6 +1,5 @@
 #backgroundText {
     color: black;
-    position: fixed;
     line-height: 40px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -8,17 +7,20 @@
     letter-spacing: -2.5px;
     font-style: italic;
     margin: auto;
-    position: bottom;
     margin-top: 200px;
 }
 
 Button:hover {
+    border-radius: 40px;
     background-color:red !important;
     color: #FFF;
     opacity: 70%;
-    border-radius: 40px;
+    
+    
     
  }
+
+
  
 
 

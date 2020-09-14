@@ -41,11 +41,10 @@ export default class Main extends React.Component {
         <div id="stars4" />
         <div id="stars5" />
         <div id="stars6" />
+        <div id="stars7" />
         <div className="top-container">
-
-
-      
-      <Button><img src={valorantlogo} alt="logo1" 
+      <Button>
+        <img src={valorantlogo} alt="logo1" 
       style={{ backgroundColor: "transparent" }}
       onClick={this._onButtonClick}>
         </img>
@@ -53,9 +52,6 @@ export default class Main extends React.Component {
          <About /> :
          null     
   }
-    <div id="backgroundText" className="backgroundText">
-      Real Time Stat Tracker
-    </div>
   </Button>
 
       </div>
