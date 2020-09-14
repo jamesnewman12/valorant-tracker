@@ -4,15 +4,7 @@ import About from "./components/About.jsx";
 import { render } from "react-dom";
 
 export default class App extends Main {
-  weDoThis() {
-  
-  return (
-    <div>
-      <Main>
-    </Main>
-    </div>
-  )
-  }
+
   constructor() {
       super();
       this.state = {
@@ -36,26 +28,21 @@ export default class App extends Main {
         
     }
   }
-  
-
-        
       render() {
         const { showHideDemo1, showHideDemo2 } = this.state;
         return (
-      <div>
-          {showHideDemo1 && <Main />}
-          <hr />
-          {showHideDemo2 && <About />}
-          <hr />
           <div>
-            <button onClick={() => this.hideComponent("showHideDemo1")}>
+          {showHideDemo1 && <Main />}
+          {showHideDemo2 && <About />}
+       
+            {/* <button onClick={() => this.hideComponent("showHideDemo1")}>
               Click to show landing page
             </button>
             <button onClick={() => this.hideComponent("showHideDemo2")}>
               Click to show stats page
-            </button>
+            </button> */}
             </div>
-            </div>
+            
         );
       };
     }

@@ -12,6 +12,6 @@ import { render } from "react-dom";
 
 render(
   <div>
-  <App /> <Main/>
+  <App />, <Main/>
   </div>, document.getElementById('root'));
 serviceWorker.unregister();
