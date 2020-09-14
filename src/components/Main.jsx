@@ -50,7 +50,9 @@ export default class Main extends React.Component {
           <div className="top-container">
             <Button
               className="button"
-              onClick={() => this.hideComponent("showAboutComponent")}>
+              onClick={() => 
+              this.hideComponent("showAboutComponent", "showMainComponent")}>
+                
               <img src={valorantlogo} alt="logo1" />
             </Button>
           </div>

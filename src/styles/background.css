@@ -10,11 +10,21 @@
     margin-top: 200px;
 }
 
+#logo1 {
+    border-radius: 20px;
+}
+
 Button:hover {
     border-radius: 45px;
     background-color:red !important;
-    opacity: 45%;
+    opacity: 35%;
  }
+
+ #about {
+     color: black;
+ }
+
+
 
 
 

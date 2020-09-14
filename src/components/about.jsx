@@ -24,35 +24,52 @@ export default class About extends React.Component {
           className="content-containers container text-center mt-5"
         >
           <h2 id="about" className={this.props.bounceLeft}>
-            Player Statistics
+            Coming Soon
           </h2>
           <div className="row mt-5">
             <div className={"col-6 col-sm-6 col-md-3 " + this.props.fadeInLeft}>
               <img src={layers} alt="" />
-              <h4>adr</h4>
+              <h2 id="about">adr</h2>
             </div>
             <div className={"col-6 col-sm-6 col-md-3 " + this.props.fadeInLeft}>
               <img src={pen} alt="" />
-              <h4>damage</h4>
+              <h2 id="about">damage</h2>
             </div>
             <div
               className={"col-6 col-sm-6 col-md-3 " + this.props.fadeInRight}
             >
               <img src={cogwheel} alt="" />
-              <h4>hs percentage</h4>
+              <h2 id="about">hs percentage</h2>
             </div>
             <div
               className={"col-6 col-sm-6 col-md-3 " + this.props.fadeInRight}
             >
               <img src={browser} alt="" />
-              <h4>best gun</h4>
+              <h2 id="about">best gun</h2>
             </div>
           </div>
 
           <div className="row" style={{ marginTop: 7 + "rem" }}>
             <div className="col-12 col-lg-6 hidden">
               <div>
-                <h2>Most often used weapons</h2>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+
+
+              <h2 id="about">Most often used weapons</h2>
               </div>
               <div className="progress mb-3">
                 <div
@@ -106,7 +123,22 @@ export default class About extends React.Component {
               }
             >
               <div>
-                <h2>Map Win Percentage</h2>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <h2 id="about">Map Win Percentage </h2>
               </div>
               <div className="progress mb-3">
                 <div
