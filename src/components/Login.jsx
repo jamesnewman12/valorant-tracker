@@ -47,7 +47,7 @@ export default function Login() {
                         style={{height: '30px',
                         width : '300px',
                        }}
-            className="loginPassword"
+            
             controlId="password"
             bsSize="large"
           >
