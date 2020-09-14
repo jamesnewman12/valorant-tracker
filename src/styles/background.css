@@ -24,6 +24,11 @@ Button:hover {
      color: black;
  }
 
+ .loginHeader {
+     color: white;
+     margin: auto;
+     padding-left: 800px;
+ }
 
 
 
