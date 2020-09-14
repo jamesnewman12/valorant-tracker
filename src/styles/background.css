@@ -11,16 +11,11 @@
 }
 
 Button:hover {
-    
-    border-radius: 40px;
+    border-radius: 45px;
     background-color:red !important;
-    color: #FFF;
-    opacity: 70%;
+    opacity: 45%;
  }
 
-Button {
-     color: green;
- }
 
 
  

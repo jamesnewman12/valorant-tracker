@@ -45,10 +45,7 @@ export default class Main extends React.Component {
       <div>
         {showHideMain && <Main />}
         {showAboutComponent && <About />}
-    
         </div>
-
-        
        <div id="my-background" className="background">
         <div id="stars" />
         <div id="stars2" />
