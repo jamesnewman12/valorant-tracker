@@ -17,7 +17,7 @@
 Button:hover {
     border-radius: 45px;
     background-color:red !important;
-    opacity: 85%;
+    opacity: 45%;
  }
 
  #about {
@@ -27,7 +27,6 @@ Button:hover {
  .loginHeader {
      color: white;
      margin: auto;
-    
      text-align: center;
  }
  
@@ -35,6 +34,30 @@ Button:hover {
      text-align: center;
      background-color: transparent;
  }
+ .loginButton {
+     text-align: center;
+     background-color: red;
+     font-size: large;
+     font-weight: 900;
+     font-size: 30px;
+
+ }
+
+ .loginEmail {
+     background-color: red;
+     text-align: center;
+ }
+
+ .loginPassword {
+    background-color: red;
+    text-align: center;
+}
+
+label {
+    font-size: 30px;
+    font-weight: 900;
+
+}
 
 
 

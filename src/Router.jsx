@@ -38,7 +38,7 @@ export default function BasicExample() {
         */}
         <Switch>
           <Route exact path="/home">
-          <Main />
+            <Main />
           </Route>
           <Route path="/stats">
             <Stats />

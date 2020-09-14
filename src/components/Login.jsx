@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../styles/background.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
+import "../styles/background.css";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -16,9 +17,19 @@ export default function Login() {
   }
 
   return (
+    <div className="background">
+    <div id="stars" />
+    <div id="stars2" />
+    <div id="stars3" />
+    <div id="stars4" />
+    <div id="stars5" />
+    <div id="stars6" />
+    <div id="stars7" />
     <div className="Login">
+    <br/>
+    <br/>
       <form onSubmit={handleSubmit}>
-        <FormGroup controlId="email" bsSize="large">
+        <FormGroup className="loginEmail" controlId="email" bsSize="large">
           <ControlLabel>Email</ControlLabel>
           <FormControl
             autoFocus
@@ -27,7 +38,9 @@ export default function Login() {
             onChange={e => setEmail(e.target.value)}
           />
         </FormGroup>
-        <FormGroup controlId="password" bsSize="large">
+        <br/>
+        <br/>
+        <FormGroup className="loginPassword" controlId="password" bsSize="large">
           <ControlLabel>Password</ControlLabel>
           <FormControl
             value={password}
@@ -35,15 +48,21 @@ export default function Login() {
             type="password"
           />
         </FormGroup>
-        <Button block bsSize="large" disabled={!validateForm()} type="submit">
+        <br/>
+        <br/>
+        <br/>
+        <Button className="loginButton" block bsSize="large" disabled={!validateForm()} type="submit">
           Login
         </Button>
       </form>
-      <Button
-  className="button2"
+      <br/>
+      <br/>
+      <br/>
+      <Button className="loginButton"
   onClick={(event) => (window.location.href = "/home")}>
   <Link to="/login" className="button">Back to home</Link>
 </Button>
+    </div>
     </div>
   );
 }
