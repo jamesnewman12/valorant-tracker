@@ -41,8 +41,5 @@ ReactDOM.render(
 <HoverImage />,
 document.getElementById("root"));
 
-Main.propTypes = {
-  children: PropTypes.element.isRequired,
-};
 
 export default Main;
