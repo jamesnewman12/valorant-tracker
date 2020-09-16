@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Main from "./components/Main.jsx";
 import About from "./components/About.jsx";
 import { render } from "react-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default class App extends Main {
   constructor() {
@@ -30,6 +31,7 @@ export default class App extends Main {
     const { showHideDemo1, showHideDemo2 } = this.state;
     return (
       <div>
+
         <Main/>
 
         {/* <button onClick={() => this.hideComponent("showHideDemo1")}>

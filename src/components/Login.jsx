@@ -32,9 +32,7 @@ export default function Login() {
           <FormGroup className="loginEmail" controlId="email" bsSize="large">
             <ControlLabel>Email</ControlLabel>
             <FormControl
-              style={{height: '30px',
-               width : '300px',
-              }}
+              style={{ height: "30px", width: "300px" }}
               autoFocus
               type="email"
               value={email}
@@ -44,10 +42,7 @@ export default function Login() {
           <br />
           <br />
           <FormGroup
-                        style={{height: '30px',
-                        width : '300px',
-                       }}
-            
+            style={{ height: "30px", width: "300px" }}
             controlId="password"
             bsSize="large"
           >
@@ -66,7 +61,7 @@ export default function Login() {
             block
             bsSize="large"
             disabled={!validateForm()}
-            style={{height: '30px', width : '100px'}}
+            style={{ height: "30px", width: "100px" }}
             type="submit"
           >
             Login
