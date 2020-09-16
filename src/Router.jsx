@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Stats from "./components/Stats.jsx";
 import Main from "./components/Main.jsx";
 import Login from "./components/Login.jsx";
@@ -7,8 +7,9 @@ import Login from "./components/Login.jsx";
 export default function BasicExample() {
   return (
     <Router>
-           
-        <Switch>
+           <ul>
+           <Link to="/stats">Stats</Link>
+           </ul>
           <Route exact path="/">
             <Main />
           </Route>
@@ -18,8 +19,6 @@ export default function BasicExample() {
           <Route path="/login">
             <Login />
           </Route>
-        </Switch>
-
     </Router>
   );
 }
