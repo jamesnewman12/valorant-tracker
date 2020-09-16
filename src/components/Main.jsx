@@ -39,7 +39,6 @@ Main.Props = {
 
 ReactDOM.render(
 <HoverImage />,
-
 document.getElementById("root"));
 
 Main.propTypes = {
