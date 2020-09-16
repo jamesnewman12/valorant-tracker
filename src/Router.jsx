@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Stats from "./components/Stats.jsx";
 import Main from "./components/Main.jsx";
 import Login from "./components/Login.jsx";
@@ -22,6 +22,3 @@ export default function BasicExample() {
     </Router>
   );
 }
-
-// You can think of these components as "pages"
-// in your app.

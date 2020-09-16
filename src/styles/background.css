@@ -10,31 +10,20 @@
      text-align: center;
  }
 
+ .authButton {
+     background-color: white;
+ }
+
+ .backButton {
+     font-size: 300px;
+ }
+
  .loginFont {
      color: white;
      justify-content: center;
  }
- 
-
- .loginPassword {
-   
-    text-align: center;
-}
 
 label {
-    text-align: center;
     font-size: 40px;
     font-weight: 900;
 }
-
-.form-control {
-    text-align: center;
-}
-
-
-
-
- 
-
-
-

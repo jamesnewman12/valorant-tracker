@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter as Link } from "react-router-dom";
-import { Row, Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
+import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -29,6 +29,8 @@ export default function Login() {
             
             <ControlLabel className = "loginFont">Email</ControlLabel>
             <FormControl
+              column="lg"
+              lg={2}
               autoFocus
               type="email"
               value={email}
@@ -50,23 +52,28 @@ export default function Login() {
           </FormGroup>
 
           <Button
-            className="loginFont"
+            className="authButton"
             block
             bsSize="large"
             disabled={!validateForm()}
             type="submit"
+            outline-primary
+            size="lg"
           >
-            Login
+            Authorize
           </Button>
         </form>
         <br />
         <br />
         <br />
         <Button
+          block
           className="loginFont"
           onClick={(event) => (window.location.href = "/")}
+          outline-primary
+          size="lg"
         >
-          <Link to="/login" className="loginFont">
+          <Link to="/login" className="backButton">
             Back to home
           </Link>
         </Button>
