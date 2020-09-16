@@ -25,9 +25,9 @@ export default function Login() {
       <div id="stars7" />
       <div className="Container">
         <form onSubmit={handleSubmit}>
-          <FormGroup className="loginEmail" controlId="email" bsSize="large">
+          <FormGroup className="loginEmail" authButton="email" bsSize="large">
             
-            <ControlLabel className = "loginFont">Email</ControlLabel>
+        
             <FormControl
               column="lg"
               lg={2}
@@ -43,7 +43,7 @@ export default function Login() {
             controlId="password"
             bsSize="large"
           >
-            <ControlLabel className = "loginFont">Password</ControlLabel>
+         
             <FormControl
               value={password}
               onChange={(e) => setPassword(e.target.value)}
@@ -60,7 +60,7 @@ export default function Login() {
             outline-primary
             size="lg"
           >
-            Authorize
+            Authorize Your Account
           </Button>
         </form>
         <br />
