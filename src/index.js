@@ -5,8 +5,17 @@ import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./styles/index.scss";
 import App from "./Router.jsx";
-import { Provider } from 'react-redux';
+import { Provider } from 'react-redux'
+import { Router, Route } from 'react-router-dom'
 import store from './store.js';
+import {combineReducers, createStore} from 'redux';
+
+
+
+const initialState = {};
+
+
+
 
 
 ReactDOM.render(

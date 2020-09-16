@@ -1,5 +1,5 @@
 import { createStore, applyMiddleware } from 'redux';
-import reducers from './reducers'
+import reducers from './reducers';
 import loggerMiddleware from 'redux-logger';
 
 

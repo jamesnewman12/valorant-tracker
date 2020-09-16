@@ -34,12 +34,14 @@ class Main extends Component {
 Main.Props = {
   src:{Valorantlogo},
   hoverSrc:{Valorantlogored}
-  
 }
 
 ReactDOM.render(
 <HoverImage />,
 document.getElementById("root"));
 
+// Main.propTypes = {
+//   children: PropTypes.element.isRequired,
+// };
 
 export default Main;

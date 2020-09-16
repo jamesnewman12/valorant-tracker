@@ -33,8 +33,7 @@ export default class App extends Main {
     return (
       <div>
         <Main/>
-        <Background/>
-        <Provider/>
+
       </div>
     );
   }
