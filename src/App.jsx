@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import Main from "./components/Main.jsx";
-import Background from "./components/BackgroundImage.jsx"
+import Background from "./components/Background.jsx"
 import { render } from "react-dom";
-import { Provider } from 'react-redux';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default class App extends Main {
@@ -33,7 +32,6 @@ export default class App extends Main {
     return (
       <div>
         <Main/>
-
       </div>
     );
   }
