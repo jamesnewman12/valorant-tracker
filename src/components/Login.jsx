@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "../styles/background.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
-import "../styles/background.css";
 
 export default function Login() {
   const [email, setEmail] = useState("");

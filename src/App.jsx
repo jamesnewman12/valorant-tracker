@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Main from "./components/Main.jsx";
-import About from "./components/About.jsx";
 import { render } from "react-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -27,19 +26,11 @@ export default class App extends Main {
       default:
     }
   }
+  
   render() {
-    const { showHideDemo1, showHideDemo2 } = this.state;
     return (
       <div>
-
         <Main/>
-
-        {/* <button onClick={() => this.hideComponent("showHideDemo1")}>
-              Click to show landing page
-            </button>
-            <button onClick={() => this.hideComponent("showHideDemo2")}>
-              Click to show stats page
-            </button> */}
       </div>
     );
   }
