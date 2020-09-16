@@ -1,26 +1,26 @@
-import { createStore, applyMiddleware } from 'redux';
-import reducers from './reducers';
-import loggerMiddleware from 'redux-logger';
+// import { createStore, applyMiddleware } from 'redux';
+// import reducers from './reducers';
+// import loggerMiddleware from 'redux-logger';
 
 
-const initialState = {};
+// const initialState = {};
 
-var thunkMiddleware = require('redux-thunk');
+// var thunkMiddleware = require('redux-thunk');
 
-const configureStore = (initialState) => {
-    const store = createStore( initialState);
+// const configureStore = (initialState) => {
+//     const store = createStore( initialState);
 
-    return { store };
-  };
+//     return { store };
+//   };
 
-const {store} = configureStore(
-           reducers,
-    initialState,
-    applyMiddleware(
-        thunkMiddleware,
-        loggerMiddleware)
+// const {store} = configureStore(
+//            reducers,
+//     initialState,
+//     applyMiddleware(
+//         thunkMiddleware,
+//         loggerMiddleware)
 
-);
+// );
     
 
-export default store;
+// export default store;
