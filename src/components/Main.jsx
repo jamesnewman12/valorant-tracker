@@ -4,7 +4,6 @@ import Valorantlogo from "./../img/Valorantlogo.png";
 import Valorantlogored from "./../img/Valorantlogored.png";
 import { Row, Col } from "react-bootstrap";
 
-
 const Main: React.SFC = () => {
   return (
     <div className="background">
