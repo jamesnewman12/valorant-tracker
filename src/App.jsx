@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Main from "./components/Main.jsx";
+import Background from "./components/Background.jsx"
 import { render } from "react-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -31,6 +32,7 @@ export default class App extends Main {
     return (
       <div>
         <Main/>
+        <Background/>
       </div>
     );
   }

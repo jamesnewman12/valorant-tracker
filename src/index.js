@@ -7,7 +7,6 @@ import "./styles/index.scss";
 import App from "./Router.jsx";
 
 ReactDOM.render(
-  <div>
-   <App/>
-  </div>, document.getElementById('root'));
+   <App/>,
+   document.getElementById('root'));
 serviceWorker.unregister();
