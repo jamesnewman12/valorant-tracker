@@ -7,9 +7,9 @@ import Login from "./components/Login.jsx";
 export default function BasicExample() {
   return (
     <Router>
-           <ul>
+           {/* <ul>
            <Link to="/stats">Stats</Link>
-           </ul>
+           </ul> */}
           <Route exact path="/">
             <Main />
           </Route>

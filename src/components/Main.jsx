@@ -14,6 +14,7 @@ const Main: React.SFC = () => {
       <div id="stars5" />
       <div id="stars6" />
       <div id="stars7" />
+   
       <Row className="justify-content-md-center">
           <HoverImage
             src={Valorantlogo}

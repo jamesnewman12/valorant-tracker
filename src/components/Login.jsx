@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import "../styles/background.css";
 import { BrowserRouter as Link } from "react-router-dom";
-import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
+import { Row, Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -16,7 +15,7 @@ export default function Login() {
   }
 
   return (
-    <div className="background">
+    <div className = "background">
       <div id="stars" />
       <div id="stars2" />
       <div id="stars3" />
@@ -24,43 +23,37 @@ export default function Login() {
       <div id="stars5" />
       <div id="stars6" />
       <div id="stars7" />
-      <div className="Login">
-        <br />
-        <br />
+      <div className="Container">
         <form onSubmit={handleSubmit}>
           <FormGroup className="loginEmail" controlId="email" bsSize="large">
-            <ControlLabel>Email</ControlLabel>
+            
+            <ControlLabel className = "loginFont">Email</ControlLabel>
             <FormControl
-              style={{ height: "30px", width: "300px" }}
               autoFocus
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
+            
           </FormGroup>
-          <br />
-          <br />
           <FormGroup
-            style={{ height: "30px", width: "300px" }}
+           
             controlId="password"
             bsSize="large"
           >
-            <ControlLabel>Password</ControlLabel>
+            <ControlLabel className = "loginFont">Password</ControlLabel>
             <FormControl
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               type="password"
             />
           </FormGroup>
-          <br />
-          <br />
-          <br />
+
           <Button
-            className="loginButton"
+            className="loginFont"
             block
             bsSize="large"
             disabled={!validateForm()}
-            style={{ height: "30px", width: "100px" }}
             type="submit"
           >
             Login
@@ -70,10 +63,10 @@ export default function Login() {
         <br />
         <br />
         <Button
-          className="loginButton"
+          className="loginFont"
           onClick={(event) => (window.location.href = "/")}
         >
-          <Link to="/login" className="button">
+          <Link to="/login" className="loginFont">
             Back to home
           </Link>
         </Button>

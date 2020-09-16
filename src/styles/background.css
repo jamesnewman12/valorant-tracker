@@ -1,29 +1,20 @@
-#about {
-     color: black;
- }
+.justify-content-md-center {
+    padding-top: 200px;
+}
+.loginEmail {
+    justify-content: center;
+}
 
- .loginHeader {
-     color: white;
+ .loginContainer {
      margin: auto;
      text-align: center;
  }
+
+ .loginFont {
+     color: white;
+     justify-content: center;
+ }
  
- .button2 {
-     text-align: center;
-     background-color: transparent;
- }
- .loginButton {
-     text-align: center;
-     font-size: large;
-     font-weight: 900;
-     font-size: 30px;
-
- }
-
- .loginEmail {
-    
-     text-align: center;
- }
 
  .loginPassword {
    
@@ -34,7 +25,6 @@ label {
     text-align: center;
     font-size: 40px;
     font-weight: 900;
-
 }
 
 .form-control {
