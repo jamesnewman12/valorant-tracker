@@ -26,7 +26,7 @@ export default class App extends Main {
       default:
     }
   }
-  
+
   render() {
     return (
       <div>
@@ -36,4 +36,4 @@ export default class App extends Main {
   }
 }
 
-render(<App />, document.getElementById("root"));
+render(<App />, document.getElementById("App"));
