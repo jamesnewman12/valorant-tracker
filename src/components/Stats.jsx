@@ -116,7 +116,6 @@ export default class Stats extends React.Component {
                 </div>
               </div>
             </div>
-
             <div
               className={
                 "col-12 col-sm-12 col-md-12 col-lg-6 " + this.props.tada

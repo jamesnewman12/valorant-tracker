@@ -37,6 +37,6 @@ export default class App extends Component {
       </div>
     );
   }
-}
+} 
 
 render(<App />, document.getElementById("App"));

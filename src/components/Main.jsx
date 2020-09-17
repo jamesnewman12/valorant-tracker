@@ -1,39 +1,24 @@
 import React, { Image, Component, styles } from "react";
-import HoverImage from "react-hover-image";
 import Valorantlogo from "./../img/Valorantlogo.png";
 import Valorantlogored from "./../img/Valorantlogored.png";
 import { Row } from "react-bootstrap";
-// import PropTypes from "prop-types";
-import ReactDOM from "react-dom";
 
 class Main extends Component {
   render() {
     return (
 <div>
-      <Row className="justify-content-md-center">
-        <HoverImage
-        {...this.props.HoverImage}
+  <div>
+<div>
+      <div className="justify-content-md-center">
           src={Valorantlogo}
           hoverSrc={Valorantlogored}
           onClick={() => (window.location.href = "/login")}
-        />
-      </Row>
+          </div>
+          </div>
+    </div>
     </div>
     )
   };
 }
-
-// Main.Props = {
-//   src:{Valorantlogo},
-//   hoverSrc:{Valorantlogored}
-// }
-
-ReactDOM.render(
-<HoverImage />,
-document.getElementById("App"));
-
-// Main.propTypes = {
-//   children: PropTypes.element.isRequired,
-// };
 
 export default Main;
