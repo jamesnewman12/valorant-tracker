@@ -26,8 +26,6 @@ export default function Login() {
       <div className="Container">
         <form onSubmit={handleSubmit}>
           <FormGroup className="loginEmail" authButton="email" bsSize="large">
-            
-        
             <FormControl
               column="lg"
               lg={2}
@@ -36,21 +34,17 @@ export default function Login() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-            
           </FormGroup>
           <FormGroup
-           
             controlId="password"
             bsSize="large"
           >
-         
             <FormControl
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               type="password"
             />
           </FormGroup>
-
           <Button
             className="authButton"
             block

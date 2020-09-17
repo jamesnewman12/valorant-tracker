@@ -20,6 +20,5 @@ const {store} = configureStore(
         logger)
 
 );
-    
 
 export default store;

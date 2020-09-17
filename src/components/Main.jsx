@@ -31,13 +31,14 @@ class Main extends Component {
   };
 }
 
-Main.Props = {
-  src:{Valorantlogo},
-  hoverSrc:{Valorantlogored}
-}
+// Main.Props = {
+//   src:{Valorantlogo},
+//   hoverSrc:{Valorantlogored}
+// }
 
 ReactDOM.render(
-<HoverImage />,document.getElementById("App"));
+<HoverImage />,
+document.getElementById("App"));
 
 // Main.propTypes = {
 //   children: PropTypes.element.isRequired,
