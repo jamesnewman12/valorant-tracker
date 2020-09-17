@@ -13,7 +13,7 @@ export default function BasicExample() {
            <Link to="/stats">Stats</Link>
            </ul> */}
           <Route exact path="/">
-          <StarBackground/>  
+          <StarBackground/>
           </Route>
           <Route path="/stats">
             <Stats />
