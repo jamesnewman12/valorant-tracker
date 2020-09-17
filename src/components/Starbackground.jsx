@@ -13,6 +13,7 @@ render () {
         <div id="stars5" />
         <div id="stars6" />
         <div id="stars7" /> 
+       
       </div>
     );
   }
