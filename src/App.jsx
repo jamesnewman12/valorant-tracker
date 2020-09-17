@@ -1,9 +1,11 @@
 import React, { Component } from "react";
+import Starbackground from "./components/Starbackground.jsx";
 import Main from "./components/Main.jsx";
 import { render } from "react-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-export default class App extends Main {
+
+export default class App extends Component {
   constructor() {
     super();
     this.state = {
@@ -30,6 +32,7 @@ export default class App extends Main {
   render() {
     return (
       <div>
+        <Starbackground/>
         <Main/>
       </div>
     );

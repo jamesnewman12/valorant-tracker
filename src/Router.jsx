@@ -3,14 +3,18 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Stats from "./components/Stats.jsx";
 import Main from "./components/Main.jsx";
 import Login from "./components/Login.jsx";
+import StarBackground from "./components/Starbackground.jsx";
 
 export default function BasicExample() {
   return (
     <Router>
-           <ul>
+      
+           {/* <ul>
            <Link to="/stats">Stats</Link>
-           </ul>
+           </ul> */}
+          
           <Route exact path="/">
+          <StarBackground/>
             <Main />
           </Route>
           <Route path="/stats">
