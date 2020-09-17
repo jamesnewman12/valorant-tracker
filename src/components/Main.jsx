@@ -37,7 +37,7 @@ Main.Props = {
 }
 
 ReactDOM.render(
-<HoverImage />,document.getElementById("root"));
+<HoverImage />,document.getElementById("App"));
 
 // Main.propTypes = {
 //   children: PropTypes.element.isRequired,

@@ -8,10 +8,9 @@ import App from "./Router.jsx";
 import { Provider } from 'react-redux'
 import store from "./redux/store.js";
 
-
 ReactDOM.render(
-  <Provider store={store}>,
-   <App/>,
+  <Provider store={store}>
+   <App/>
    </Provider>,
-   document.getElementById('root'));
+   document.getElementById('App'));
 serviceWorker.unregister();

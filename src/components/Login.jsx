@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter as Link } from "react-router-dom";
-import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
+import { Button, FormGroup, FormControl } from "react-bootstrap";
 
 export default function Login() {
   const [email, setEmail] = useState("");
