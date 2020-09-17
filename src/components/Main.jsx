@@ -6,7 +6,6 @@ import { Row } from "react-bootstrap";
 class Main extends Component {
   render() {
     return (
-<div>
   <div>
 <div>
       <div className="justify-content-md-center">
@@ -15,7 +14,6 @@ class Main extends Component {
           onClick={() => (window.location.href = "/login")}
           </div>
           </div>
-    </div>
     </div>
     )
   };
