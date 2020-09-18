@@ -6,8 +6,11 @@ export default class ImageHover extends Component {
   state = {
     img: Valorantlogo,
   };
+  
   render() {
+    console.log(this.state);
     return (
+      <div>
       <div className="ImageHover">
         <div className="justify-content-md-center">
           <img
@@ -27,6 +30,10 @@ export default class ImageHover extends Component {
           />
         </div>
       </div>
+      </div>
+    
     );
+   
   }
+
 }
