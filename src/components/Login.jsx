@@ -53,6 +53,7 @@ export default function Login() {
             type="submit"
             outline-primary
             size="lg"
+            onClick={() => (window.location.href = "/profile")}
           >
             Authorize Your Account
           </Button>

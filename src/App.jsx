@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import Starbackground from "./components/Starbackground.jsx";
-import Main from "./components/Main.jsx";
 import { render } from "react-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 

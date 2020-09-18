@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Stats from "./components/Stats.jsx";
-import Main from "./components/Imagehover.jsx";
+import Profile from "./components/Profile.jsx";
 import Login from "./components/Login.jsx";
 import StarBackground from "./components/Starbackground.jsx";
 
@@ -15,8 +14,8 @@ export default function BasicExample() {
           <Route exact path="/">
           <StarBackground/>
           </Route>
-          <Route path="/stats">
-            <Stats />
+          <Route path="/profile">
+            <Profile />
           </Route>
           <Route path="/login">
             <Login />
