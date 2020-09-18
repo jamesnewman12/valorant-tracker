@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ImageHover from "./Main.jsx";
+import ImageHover from "./Imagehover.jsx";
 
 class Starbackground extends Component {
 render () {
@@ -9,11 +9,10 @@ render () {
         <div id="stars2" />
         <div id="stars3" />
         <div id="stars4" />
-        <ImageHover/>
         <div id="stars5" />
         <div id="stars6" />
         <div id="stars7" /> 
-       
+        <ImageHover/>
       </div>
     );
   }
