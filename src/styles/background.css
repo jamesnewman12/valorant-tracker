@@ -54,6 +54,7 @@
  .loginFont {
      color: white;
      justify-content: center;
+     text-align: center;
  }
 
 label {
@@ -78,9 +79,11 @@ label {
 }
 
 #agentIntro {
-    justify-content: center;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
 }
 
-.agentIntro {
-    justify-content: center;
+.colBtn {
+    text-align: center;
 }

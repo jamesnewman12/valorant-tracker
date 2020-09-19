@@ -12,9 +12,6 @@ import Overallstats from "./components/Overallstats.jsx";
 export default function BasicExample() {
   return (
     <Router>
-           {/* <ul>
-           <Link to="/stats">Stats</Link>
-           </ul> */}
           <Route exact path="/">
           <StarBackground/>
           </Route>

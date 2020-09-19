@@ -87,9 +87,10 @@ export default class Profile extends React.Component {
                 </div>
               </div>
             </div>
+            <div class="colBtn">
             <Button
             variant="outline-primary"
-          block
+          
           className="loginFont"
           onClick={(event) => (window.location.href = "/")}
           outline-primary
@@ -102,7 +103,7 @@ export default class Profile extends React.Component {
        </div>
         </div>
         </div>
-      
+      </div>
     );
   }
 }
