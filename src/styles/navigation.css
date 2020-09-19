@@ -8,5 +8,10 @@
 }
 
 .nav-link {
+        color: white;
+}
+
+.btn-outline-success {
         color: red;
+        border-color: red;
 }
