@@ -23,7 +23,10 @@ export default function Login() {
       <div id="stars5" />
       <div id="stars6" />
       <div id="stars7" />
-      <div className="Container">
+      <div class="row">
+      <div class="col-lg-4 col-lg-offset-4">
+        
+            
         <form onSubmit={handleSubmit}>
           <FormGroup className="loginEmail" authButton="email" bsSize="large">
             <FormControl
@@ -72,7 +75,9 @@ export default function Login() {
             Back to home
           </Link>
         </Button>
+      
       </div>
+    </div>
     </div>
   );
 }

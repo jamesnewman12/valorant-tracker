@@ -30,11 +30,9 @@
 .dropdown-item {
         color: white;
         font-weight: bold;
+        text-decoration: underline;
 }
 
-.navbar-inverse .navbar-nav>li>a {
-        color: red;
-}
 
 a:hover {
         color: red;
@@ -55,3 +53,18 @@ padding-right: 50px;
 padding-left: 30px;
 font-weight: bold;
 }
+
+.row {
+        margin: 0 auto;
+}
+
+.col-centered {
+        float: none;
+        margin: 0 auto;
+}
+
+.col-lg-4 {
+        margin: auto;
+        padding-top: 300px;
+}
+
