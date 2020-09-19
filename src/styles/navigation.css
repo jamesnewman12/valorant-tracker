@@ -1,10 +1,10 @@
 .bg-transparent {
-        color: red;
-        border-bottom: 2px solid red;
+        color: #FD4654;
+        border-bottom: 2px solid #FD4654;
 }
 
 .navbar-brand {
-        color: red;
+        color: #FD4654;
         padding-left: 10px;
 }
 
@@ -13,17 +13,17 @@
 }
 
 .btn-outline-success {
-        color: red;
-        border-color: red;
+        color: #FD4654;
+        border-color: #FD4654;
 }
 
 .my-2 {
-        color: red;
+        color:#FD4654;
 }
 
 .dropdown-menu {
         background-color: transparent;
-        border-color: red;
+        border-color:#FD4654;
         margin-top: 10px; 
 }
 
@@ -35,17 +35,17 @@
 
 
 a:hover {
-        color: red;
+        color:#FD4654;
 }
 
 .btn:hover {
-        border-color: red;
-        background-color: red;
+        border-color:#FD4654;
+        background-color:#FD4654;
         color: white;
 }
 
 .showDropdown {
-        color: red;
+        color:#FD4654;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
