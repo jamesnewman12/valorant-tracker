@@ -8,7 +8,7 @@ import "../styles/background.css";
 import { Button } from "react-bootstrap";
 import { BrowserRouter as Link } from "react-router-dom";
 import Navigation from "./Navigation.jsx";
-import demoImage from "../img/demoImage.png";
+import agentImage from "../img/agentImage.png";
 
 export default class Profile extends React.Component {
   constructor() {
@@ -30,47 +30,23 @@ export default class Profile extends React.Component {
       <div id="stars6" />
       <div id="stars7" />
       <Navigation/>
-        <div
+                <div
           id="about-container"
           className="content-containers container text-center mt-5"
         >
-          <h2 id="about" className={this.props.bounceLeft}>
+      <h2 id="about" className={this.props.bounceLeft}>
             Welcome "USER"
           </h2>
+      <img src={agentImage} alt="" />
+
+
+
           <div className="row mt-5">
             <div className={"col-6 col-sm-6 col-md-3 " + this.props.fadeInLeft}>
-              <img src={layers} alt="" />
+              
               <h2 id="about">RANK</h2>
             </div>
-            <div className={"col-6 col-sm-6 col-md-3 " + this.props.fadeInLeft}>
-              <img src={pen} alt="" />
-              <h2 id="about">K/D RATIO</h2>
-            </div>
-            <div
-              className={"col-6 col-sm-6 col-md-3 " + this.props.fadeInRight}
-            >
-              <img src={cogwheel} alt="" />
-              <h2 id="about">HS %</h2>
-            </div>
-            <div
-              className={"col-6 col-sm-6 col-md-3 " + this.props.fadeInRight}
-            >
-              <img src={browser} alt="" />
-              <h2 id="about">WIN %</h2>
-            </div>
-          </div>
 
-          <div className="row" style={{ marginTop: 7 + "rem" }}>
-            <div className="col-12 col-lg-6 hidden">
-                </div>
-              </div>
-
-            <div
-              className={
-                "col-12 col-sm-12 col-md-12 col-lg-6 " + this.props.tada
-              }
-            >
-              <div>
               <h2 id="about">Map Win Percentage </h2>
               </div>
               <div className="progress mb-3">
@@ -133,7 +109,7 @@ export default class Profile extends React.Component {
        </div>
         </div>
         </div>
-        </div>
+      
     );
   }
 }

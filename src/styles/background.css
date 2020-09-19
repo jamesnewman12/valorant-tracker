@@ -72,3 +72,7 @@ label {
 .profileImage {
     width: 200px;
 }
+
+#about {
+    justify-content: center;
+}
