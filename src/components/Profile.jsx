@@ -38,11 +38,12 @@ export default class Profile extends React.Component {
       <img src={agentImage} alt="" />
             <div className={"col-6 col-sm-6 col-md-3 " + this.props.fadeInLeft}>
               </div>
+              <br/>
               <div class="rankBtn">
               <h2 id="about">RANK</h2>
               </div>
               </div>
-            
+            <br/>
             <div class="colBtn">
             <Button
             variant="outline-primary"
