@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import ImageHover from "./Imagehover.jsx";
-
 class Starbackground extends Component {
 render () {
     return (

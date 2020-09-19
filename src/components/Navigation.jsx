@@ -60,11 +60,11 @@ class Navigation extends React.Component {
             <NavItem path="/" name="Home" />
             <NavItem path="/login" name="Login" />
               <NavDropdown name="Competitive Stats">
-                <a className="dropdown-item" href="/">View Agent Stats</a>
-                <a className="dropdown-item" href="/">View Weapon Stats</a>
-                <a className="dropdown-item" href="/">View Map Stats</a>
+                <a className="dropdown-item" href="/profile+agent">View Agent Stats</a>
+                <a className="dropdown-item" href="/profile+weapon">View Weapon Stats</a>
+                <a className="dropdown-item" href="/profile+map">View Map Stats</a>
                 <div className="dropdown-divider"></div>
-                <a className="dropdown-item" href="/">View Overall Stats</a>
+                <a className="dropdown-item" href="/profile+overall">View Overall Stats</a>
               </NavDropdown>
           </ul>
         </div>
