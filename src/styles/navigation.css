@@ -5,6 +5,7 @@
 
 .navbar-brand {
         color: red;
+        padding-left: 10px;
 }
 
 .nav-link {
@@ -14,6 +15,10 @@
 .btn-outline-success {
         color: red;
         border-color: red;
+}
+
+.my-2 {
+        color: red;
 }
 
 .dropdown-menu {
@@ -38,4 +43,13 @@ a:hover {
         border-color: red;
         background-color: red;
         color: white;
+}
+
+.showDropdown {
+        color: red;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+padding-right: 50px;
+padding-left: 30px;
 }
