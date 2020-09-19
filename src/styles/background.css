@@ -60,3 +60,11 @@ label {
     font-size: 40px;
     font-weight: 900;
 }
+
+.navbar-expand-lg {
+    margin-left: 20px;
+}
+
+.dropdown-menu {
+    margin-left: 20px;
+}
