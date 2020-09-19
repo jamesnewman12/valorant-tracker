@@ -25,12 +25,9 @@ export default class Overallstats extends React.Component {
       <div id="stars6" />
       <div id="stars7" />
       <Navigation/>
-         
             <div className={"col-6 col-sm-6 col-md-3 " + this.props.fadeInLeft}>
-              
               <h2 id="agentIntro">Overall</h2>
               </div>
-
               <div className="progress mb-3">
                 <div
                   className="progress-bar fill-90-bar"
@@ -68,7 +65,6 @@ export default class Overallstats extends React.Component {
         </Button>
        </div>
         </div>
-      
     );
   }
 }

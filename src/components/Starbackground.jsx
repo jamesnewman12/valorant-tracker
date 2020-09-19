@@ -3,7 +3,6 @@ import ImageHover from "./Imagehover.jsx";
 class Starbackground extends Component {
 render () {
     return (
-      
       <div className="background">
         <div id="stars" />
         <div id="stars2" />
