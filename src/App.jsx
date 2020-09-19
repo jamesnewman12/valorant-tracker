@@ -30,9 +30,8 @@ export default class App extends Component {
 
   render() {
     return (
-      <div>
-      
-      </div>
+<div class="col-lg-4 col-lg-offset-4">
+  </div>
     );
   }
 } 

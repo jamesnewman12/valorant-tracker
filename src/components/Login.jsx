@@ -26,7 +26,6 @@ export default function Login() {
       <div class="row">
         <div class="col-lg-4 col-lg-offset-4">
           <div class="loginText">Email</div>
-
           <form onSubmit={handleSubmit}>
             <FormGroup className="loginEmail" authButton="email" bsSize="large">
               <FormControl

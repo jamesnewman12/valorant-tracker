@@ -8,7 +8,7 @@ import "../styles/background.css";
 import { Button } from "react-bootstrap";
 import { BrowserRouter as Link } from "react-router-dom";
 import Navigation from "./Navigation.jsx";
-
+import demoImage from "../img/demoImage.png";
 
 export default class Profile extends React.Component {
   constructor() {
@@ -21,8 +21,6 @@ export default class Profile extends React.Component {
     return (
       <div>
         <div>
-        
-
       <div className = "background">
       <div id="stars" />
       <div id="stars2" />
@@ -42,23 +40,23 @@ export default class Profile extends React.Component {
           <div className="row mt-5">
             <div className={"col-6 col-sm-6 col-md-3 " + this.props.fadeInLeft}>
               <img src={layers} alt="" />
-              <h2 id="about">adr</h2>
+              <h2 id="about">RANK</h2>
             </div>
             <div className={"col-6 col-sm-6 col-md-3 " + this.props.fadeInLeft}>
               <img src={pen} alt="" />
-              <h2 id="about">damage</h2>
+              <h2 id="about">K/D RATIO</h2>
             </div>
             <div
               className={"col-6 col-sm-6 col-md-3 " + this.props.fadeInRight}
             >
               <img src={cogwheel} alt="" />
-              <h2 id="about">hs percentage</h2>
+              <h2 id="about">HS %</h2>
             </div>
             <div
               className={"col-6 col-sm-6 col-md-3 " + this.props.fadeInRight}
             >
               <img src={browser} alt="" />
-              <h2 id="about">best gun</h2>
+              <h2 id="about">WIN %</h2>
             </div>
           </div>
 

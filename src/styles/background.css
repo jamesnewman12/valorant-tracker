@@ -68,3 +68,7 @@ label {
 .dropdown-menu {
     margin-left: 20px;
 }
+
+.profileImage {
+    width: 200px;
+}
