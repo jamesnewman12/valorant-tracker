@@ -65,7 +65,6 @@ export default class Agentstats extends React.Component {
         </Button>
        </div>
         </div>
-      
     );
   }
 }

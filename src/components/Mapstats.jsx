@@ -65,7 +65,6 @@ export default class Mapstats extends React.Component {
         </Button>
        </div>
         </div>
-      
     );
   }
 }

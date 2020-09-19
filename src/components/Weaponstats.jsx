@@ -64,7 +64,6 @@ export default class Weaponstats extends React.Component {
         </Button>
        </div>
         </div>
-      
     );
   }
 }
