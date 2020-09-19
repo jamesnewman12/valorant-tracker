@@ -47,7 +47,8 @@ class NavDropdown extends React.Component {
 class Navigation extends React.Component {
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <a className="navbar-brand" href="/">Valorant Player Profile</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
@@ -55,10 +56,8 @@ class Navigation extends React.Component {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
-            
             <NavItem path="/" name="Home" />
             <NavItem path="/login" name="Login" />
-            
               <NavDropdown name="Competitive Stats">
                 <a className="dropdown-item" href="/">View Agent Stats</a>
                 <a className="dropdown-item" href="/">View Weapon Stats</a>
@@ -66,7 +65,6 @@ class Navigation extends React.Component {
                 <div className="dropdown-divider"></div>
                 <a className="dropdown-item" href="/">View Overall Stats</a>
               </NavDropdown>
-            
           </ul>
           <form className="form-inline my-2 my-lg-0">
             <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />

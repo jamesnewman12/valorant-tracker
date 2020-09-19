@@ -19,6 +19,10 @@ export default class Profile extends React.Component {
   }
   render() {
     return (
+      <div>
+        <div>
+        <Navigation/>
+
       <div className = "background">
       <div id="stars" />
       <div id="stars2" />
@@ -27,7 +31,7 @@ export default class Profile extends React.Component {
       <div id="stars5" />
       <div id="stars6" />
       <div id="stars7" />
-      <Navigation/>
+      
         <div
           id="about-container"
           className="content-containers container text-center mt-5"
@@ -128,7 +132,8 @@ export default class Profile extends React.Component {
             Back to home
           </Link>
         </Button>
-       
+       </div>
+        </div>
         </div>
         </div>
     );
