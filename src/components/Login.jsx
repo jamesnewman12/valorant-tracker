@@ -15,7 +15,7 @@ export default function Login() {
   }
 
   return (
-    <div className = "background">
+    <div className="background">
       <div id="stars" />
       <div id="stars2" />
       <div id="stars3" />
@@ -24,60 +24,59 @@ export default function Login() {
       <div id="stars6" />
       <div id="stars7" />
       <div class="row">
-      <div class="col-lg-4 col-lg-offset-4">
-        
-            
-        <form onSubmit={handleSubmit}>
-          <FormGroup className="loginEmail" authButton="email" bsSize="large">
-            <FormControl
-              column="lg"
-              lg={2}
-              autoFocus
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </FormGroup>
-          <FormGroup
-            controlId="password"
-            bsSize="large"
-          >
-            <FormControl
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              type="password"
-            />
-          </FormGroup>
+        <div class="col-lg-4 col-lg-offset-4">
+          <div class="loginText">Email</div>
+
+          <form onSubmit={handleSubmit}>
+            <FormGroup className="loginEmail" authButton="email" bsSize="large">
+              <FormControl
+                column="lg"
+                lg={2}
+                autoFocus
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              
+            </FormGroup>
+            <div class="loginText">Password</div>
+            <FormGroup controlId="password" bsSize="large">
+              <FormControl
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                type="password"
+              />
+            </FormGroup>
+            <br/>
+            <Button
+              className="authButton"
+              block
+              bsSize="large"
+              disabled={!validateForm()}
+              type="submit"
+              outline-primary
+              size="lg"
+              onClick={() => (window.location.href = "/profile")}
+            >
+              Authorize Your Account
+            </Button>
+          </form>
+          <br />
+          <br />
+          <br />
           <Button
-            className="authButton"
             block
-            bsSize="large"
-            disabled={!validateForm()}
-            type="submit"
+            className="loginFont"
+            onClick={(event) => (window.location.href = "/")}
             outline-primary
             size="lg"
-            onClick={() => (window.location.href = "/profile")}
           >
-            Authorize Your Account
+            <Link to="/login" className="backButton">
+              Back to home
+            </Link>
           </Button>
-        </form>
-        <br />
-        <br />
-        <br />
-        <Button
-          block
-          className="loginFont"
-          onClick={(event) => (window.location.href = "/")}
-          outline-primary
-          size="lg"
-        >
-          <Link to="/login" className="backButton">
-            Back to home
-          </Link>
-        </Button>
-      
+        </div>
       </div>
-    </div>
     </div>
   );
 }

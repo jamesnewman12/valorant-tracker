@@ -68,3 +68,12 @@ font-weight: bold;
         padding-top: 300px;
 }
 
+#about {
+        color: white;
+}
+
+.loginText{
+        text-align: center;
+        color: white;
+}
+
