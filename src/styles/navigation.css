@@ -29,6 +29,7 @@
 
 .dropdown-item {
         color: white;
+        font-weight: bold;
 }
 
 .navbar-inverse .navbar-nav>li>a {
@@ -52,4 +53,5 @@ a:hover {
 .navbar-expand-lg .navbar-nav .nav-link {
 padding-right: 50px;
 padding-left: 30px;
+font-weight: bold;
 }
