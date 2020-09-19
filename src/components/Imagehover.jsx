@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Valorantlogo from "./../img/Valorantlogo.png";
+import Valorantlogo from "./../img/valorantlogo.png";
 import Valorantlogored from "./../img/Valorantlogored.png";
 
 export default class ImageHover extends Component {

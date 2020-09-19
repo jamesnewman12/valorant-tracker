@@ -7,6 +7,7 @@ import PropTypes from "prop-types";
 import "../styles/background.css";
 import { Button } from "react-bootstrap";
 import { BrowserRouter as Link } from "react-router-dom";
+import Navigation from "./Navigation.jsx";
 
 
 export default class Profile extends React.Component {
@@ -26,6 +27,7 @@ export default class Profile extends React.Component {
       <div id="stars5" />
       <div id="stars6" />
       <div id="stars7" />
+      <Navigation/>
         <div
           id="about-container"
           className="content-containers container text-center mt-5"
@@ -126,6 +128,7 @@ export default class Profile extends React.Component {
             Back to home
           </Link>
         </Button>
+       
         </div>
         </div>
     );
