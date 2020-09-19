@@ -33,68 +33,23 @@ export default class Profile extends React.Component {
       <h2 id="about" className={this.props.bounceLeft}>
             Welcome "USER"
           </h2>
+          <br/>
+          <br/>
       <img src={agentImage} alt="" />
-          <div className="row mt-5">
             <div className={"col-6 col-sm-6 col-md-3 " + this.props.fadeInLeft}>
-              
+              </div>
+              <div class="rankBtn">
               <h2 id="about">RANK</h2>
-            </div>
-
-              <h2 id="about">Map Win Percentage </h2>
               </div>
-              <div className="progress mb-3">
-                <div
-                  className="progress-bar fill-80-bar"
-                  role="progressbar"
-                  style={{ width: 80 + "%" }}
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  BIND
-                </div>
               </div>
-              <div className="progress mb-3">
-                <div
-                  className="progress-bar fill-80-bar"
-                  role="progressbar"
-                  style={{ width: 20 + "%" }}
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  HAVEN
-                </div>
-              </div>
-              <div className="progress mb-3">
-                <div
-                  className="progress-bar fill-90-bar"
-                  role="progressbar"
-                  style={{ width: 65 + "%" }}
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  SPLIT
-                </div>
-              </div>
-              <div className="progress mb-3">
-                <div
-                  className="progress-bar fill-60-bar"
-                  role="progressbar"
-                  style={{ width: 70 + "%" }}
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  ASCENT
-                </div>
-              </div>
-            </div>
+            
             <div class="colBtn">
             <Button
             variant="outline-primary"
-          
-          className="loginFont"
-          onClick={(event) => (window.location.href = "/")}
-          outline-primary
-          size="lg"
+            className="loginFont"
+            onClick={(event) => (window.location.href = "/")}
+            outline-primary
+            size="lg"
         >
           <Link to="/login" className="backButton">
             Back to home
@@ -103,7 +58,8 @@ export default class Profile extends React.Component {
        </div>
         </div>
         </div>
-      </div>
+        </div>
+      
     );
   }
 }

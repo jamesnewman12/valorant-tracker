@@ -9,7 +9,7 @@ export default class Mapstats extends React.Component {
   constructor() {
     super();
     this.state = {
-      name: "React"
+      name: "React",
     };
   }
   render() {
@@ -37,10 +37,10 @@ export default class Mapstats extends React.Component {
         <br />
         <br />
         <div class="col align-items-center">
-          <div class="col" ></div>
+          <div class="col"></div>
         </div>
         <div class="colBtn">
-        <Button
+          <Button
             className="loginFont"
             onClick={(event) => (window.location.href = "/")}
             outline-primary
