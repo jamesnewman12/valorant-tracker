@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Valorantlogo from "./../img/valorantlogo.png";
 import Valorantlogored from "./../img/Valorantlogored.png";
+import stats from "./../img/stats.png";
+import statsstyle from "./../styles/stats.css"
 
 export default class ImageHover extends Component {
   state = {
@@ -11,7 +13,7 @@ export default class ImageHover extends Component {
     console.log(this.state);
     return (
       <div>
-        <div className="ImageHover">
+        <div class="ImageHover">
           <div className="justify-content-md-center">
             <img
               src={this.state.img}
@@ -28,9 +30,15 @@ export default class ImageHover extends Component {
               }}
               onClick={() => (window.location.href = "/login")}
             />
-          </div>
-        </div>
+            
+          <div class="statsImg">
+          <img
+        src={stats}
+        alt="stats"/>
       </div>
+        </div>
+        </div>
+        </div>
     );
   }
 }
