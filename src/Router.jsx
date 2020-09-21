@@ -27,9 +27,7 @@ export default function BasicExample() {
           <Route path="/profile+map">
             <Mapstats/>
           </Route>
-          <Route path="/profile">
-            <Overallstats/>
-          </Route>
+
           <Route path="/login">
             <Login />
           </Route>
