@@ -30,7 +30,6 @@ export default class ImageHover extends Component {
               }}
               onClick={() => (window.location.href = "/login")}
             />
-            
           <div class="statsImg">
           <img
         src={stats}

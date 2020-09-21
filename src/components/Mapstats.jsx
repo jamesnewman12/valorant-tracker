@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import "../styles/background.css";
 import { Button } from "react-bootstrap";
 import { BrowserRouter as Link } from "react-router-dom";
