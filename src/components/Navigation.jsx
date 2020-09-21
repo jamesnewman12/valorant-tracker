@@ -95,8 +95,8 @@ class Navigation extends React.Component {
                 View Map Stats
               </a>
               <div className="dropdown-divider"></div>
-              <a className="dropdown-item" href="/profile+overall">
-                View Overall Stats
+              <a className="dropdown-item" href="/profile">
+                Profile Stats
               </a>
             </NavDropdown>
           </ul>

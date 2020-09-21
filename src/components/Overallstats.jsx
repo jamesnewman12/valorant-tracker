@@ -26,7 +26,7 @@ export default class Overallstats extends React.Component {
           <div class="col"></div>
         </div>
         <div class="col">
-          <h2 id="agentIntro">Overall Stats</h2>
+          <h2 id="agentIntro">Profile</h2>
         </div>
         <div class="col"></div>
         <br />
