@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route} from "react-router-dom";
 import Profile from "./components/Profile.jsx";
 import Login from "./components/Login.jsx";
 import StarBackground from "./components/Starbackground.jsx";
@@ -26,7 +26,6 @@ export default function BasicExample() {
           <Route path="/profile+map">
             <Mapstats/>
           </Route>
-
           <Route path="/login">
             <Login />
           </Route>
