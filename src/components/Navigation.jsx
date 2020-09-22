@@ -2,7 +2,6 @@ import React from "react";
 import "./../styles/navigation.css";
 
 const NavItem = (props) => {
-  //   const styles = href="./../navigation.css"
   const pageURI = window.location.pathname + window.location.search;
   const liClassName = props.path === pageURI ? "nav-item active" : "nav-item";
   const aClassName = props.disabled ? "nav-link disabled" : "nav-link";

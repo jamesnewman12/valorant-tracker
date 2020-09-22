@@ -7,9 +7,9 @@ import Agentstats from "./components/Agentstats.jsx";
 import Weaponstats from "./components/Weaponstats.jsx";
 import Mapstats from "./components/Mapstats.jsx";
 
-
-export default function BasicExample() {
+function App() {
   return (
+    <div className="App">
     <Router>
           <Route exact path="/">
           <StarBackground/>
@@ -28,10 +28,14 @@ export default function BasicExample() {
           </Route>
           <Route path="/login">
             <Login />
-          </Route>
+             </Route>
     </Router>
+   
+    </div>
   );
 }
+
+export default App;
 
 // You can think of these components as "pages"
 // in your app.
