@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Valorantlogo from "./../img/valorantlogo.png";
-import Valorantlogored from "./../img/Valorantlogored.png";
-import stats from "./../img/stats.png";
+import Valorantlogo from "./../assets/img/valorantlogo.png";
+import Valorantlogored from "./../assets/img/Valorantlogored.png";
+import stats from "./../assets/img/stats.png";
 import "./../styles/stats.css"
 
 export default class ImageHover extends Component {

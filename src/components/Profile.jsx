@@ -4,7 +4,8 @@ import "../styles/background.css";
 import { Button } from "react-bootstrap";
 import { BrowserRouter as Link } from "react-router-dom";
 import Navigation from "./Navigation.jsx";
-import agentImage from "../img/agentImage.png";
+import agentImage from "../assets/img/agentImage.png";
+
 
 export default class Profile extends React.Component {
   constructor() {

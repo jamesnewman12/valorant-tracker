@@ -63,6 +63,8 @@ class NavDropdown extends React.Component {
 class Navigation extends React.Component {
   render() {
     return (
+      <div>
+      <h1>{this.props.name}</h1>
       <div className="navbar navbar-expand-lg navbar-transparent bg-transparent transparent">
         <a className="navbar-brand" href="/">
           <strong>Welcome "USER"</strong>
@@ -100,6 +102,7 @@ class Navigation extends React.Component {
             </NavDropdown>
           </ul>
         </div>
+      </div>
       </div>
     );
   }

@@ -12,6 +12,7 @@ export default class Agentstats extends React.Component {
     };
   }
   render() {
+    
     return (
       <div className="background">
         <div id="stars" />
