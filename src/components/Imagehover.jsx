@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Valorantlogo from "./../assets/img/valorantlogo.png";
 import Valorantlogored from "./../assets/img/Valorantlogored.png";
 import stats from "./../assets/img/stats.png";
-import "./../styles/stats.css"
+import "./../styles/stats.css";
 
 export default class ImageHover extends Component {
   state = {
@@ -30,15 +30,12 @@ export default class ImageHover extends Component {
               }}
               onClick={() => (window.location.href = "/login")}
             />
-          <div class="statsImg">
-          <img
-        src={stats}
-        alt="stats"/>
+            <div class="statsImg">
+              <img src={stats} alt="stats" />
+            </div>
+          </div>
+        </div>
       </div>
-        </div>
-        </div>
-        </div>
-
     );
   }
 }
