@@ -6,6 +6,7 @@ import StarBackground from "./components/Starbackground.jsx";
 import Agentstats from "./components/Agentstats.jsx";
 import Weaponstats from "./components/Weaponstats.jsx";
 import Mapstats from "./components/Mapstats.jsx";
+import { FormControl } from "react-bootstrap";
 
 function App() {
   return (
@@ -14,9 +15,17 @@ function App() {
         <Route exact path="/">
           <StarBackground />
         </Route>
-        <Route path="/profile">
-          <Profile />
+        <Route 
+        path="/login"
+        render>
+          <Login />
         </Route>
+        <Route
+  path='/profile'
+  render={(props) => (
+    <Profile {...props} email={'James'} />
+  )}
+/>
         <Route path="/profile+agent">
           <Agentstats />
         </Route>
@@ -25,9 +34,6 @@ function App() {
         </Route>
         <Route path="/profile+map">
           <Mapstats />
-        </Route>
-        <Route path="/login">
-          <Login />
         </Route>
       </Router>
     </div>
