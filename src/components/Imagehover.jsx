@@ -28,7 +28,7 @@ export default class ImageHover extends Component {
                   img: Valorantlogo,
                 });
               }}
-              onClick={() => (window.location.href = "/login")}
+              onClick={() => (window.location.href = "/logincontrol")}
             />
             <div class="statsImg">
               <img src={stats} alt="stats" />

@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Profile from "./components/Profile.jsx";
-import Login from "./components/Login.jsx";
+
 import StarBackground from "./components/Starbackground.jsx";
 import Agentstats from "./components/Agentstats.jsx";
 import Weaponstats from "./components/Weaponstats.jsx";
 import Mapstats from "./components/Mapstats.jsx";
-import { FormControl } from "react-bootstrap";
+import LoginControl from "./components/LoginControl.jsx";
 
 function App() {
   return (
@@ -15,20 +15,19 @@ function App() {
         <Route exact path="/">
           <StarBackground />
         </Route>
-        <Route 
-        path="/login"
-        render>
-          <Login />
+
+        <Route path="/logincontrol">
+         <LoginControl/>
         </Route>
-        <Route
-  path='/profile'
-  render={(props) => (
-    <Profile {...props} email={'James'} />
-  )}
-/>
+
+        <Route path="/profile">
+          <Profile />
+        </Route>
+
         <Route path="/profile+agent">
           <Agentstats />
         </Route>
+
         <Route path="/profile+weapon">
           <Weaponstats />
         </Route>

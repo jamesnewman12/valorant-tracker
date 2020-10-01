@@ -5,7 +5,7 @@ import { Button } from "react-bootstrap";
 import { BrowserRouter as Link } from "react-router-dom";
 import Navigation from "./Navigation.jsx";
 import agentImage from "../assets/img/agentImage.png";
-import Login from "./Login";
+
 
 class Profile extends React.Component {
 
@@ -27,8 +27,8 @@ class Profile extends React.Component {
               className="content-containers container text-center mt-5"
             >
               <div>
-            <h2 className="sibling">Welcome, 
-            {this.props.email}
+            <h2 className="sibling">Welcome, "USER"
+         
            
              </h2>
               </div>
@@ -64,3 +64,4 @@ class Profile extends React.Component {
 
 
 export default Profile;
+

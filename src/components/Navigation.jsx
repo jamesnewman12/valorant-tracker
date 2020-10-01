@@ -83,7 +83,7 @@ class Navigation extends React.Component {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
             <NavItem path="/" name="Home" />
-            <NavItem path="/login" name="Login" />
+            <NavItem path="/logincontrol" name="Login" />
             <NavItem path="/profile" name="Profile" />
             <NavDropdown name="Competitive Stats">
               <a className="dropdown-item" href="/profile+agent">
