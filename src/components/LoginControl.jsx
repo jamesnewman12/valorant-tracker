@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter as Link } from "react-router-dom";
 import { Button, FormGroup, FormControl } from "react-bootstrap";
+import Tooltip from "@material-ui/core/Tooltip";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -36,7 +37,6 @@ export default function Login() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
-              
             </FormGroup>
             <div class="loginText">Password</div>
             <FormGroup controlId="password" bsSize="large">
@@ -46,19 +46,24 @@ export default function Login() {
                 type="password"
               />
             </FormGroup>
-            <br/>
-            <Button
-              className="authButton"
-              block
-              bsSize="large"
-              disabled={!validateForm()}
-              type="submit"
-              outline-primary
-              size="lg"
-              onClick={() => (window.location.href = "/profile")}
+            <br />
+            <Tooltip
+              title="By clicking this button you are agreeing to grant permissions and authorization access to your riot account."
+              placement="right-start"
             >
-              Authorize Your Account
-            </Button>
+              <Button
+                className="authButton"
+                block
+                bsSize="large"
+                disabled={!validateForm()}
+                type="submit"
+                outline-primary
+                size="lg"
+                onClick={() => (window.location.href = "/profile")}
+              >
+                Authorize Your Account
+              </Button>
+            </Tooltip>
           </form>
           <br />
           <br />

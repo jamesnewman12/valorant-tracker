@@ -6,9 +6,7 @@ import { BrowserRouter as Link } from "react-router-dom";
 import Navigation from "./Navigation.jsx";
 import agentImage from "../assets/img/agentImage.png";
 
-
 class Profile extends React.Component {
-
   render() {
     return (
       <div>
@@ -27,10 +25,7 @@ class Profile extends React.Component {
               className="content-containers container text-center mt-5"
             >
               <div>
-            <h2 className="sibling">Welcome, "USER"
-         
-           
-             </h2>
+                <h2 className="sibling">Welcome, "USER"</h2>
               </div>
               <br />
               <br />
@@ -62,6 +57,4 @@ class Profile extends React.Component {
   }
 }
 
-
 export default Profile;
-
