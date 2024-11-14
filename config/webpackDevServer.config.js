@@ -54,6 +54,7 @@ module.exports = function(proxy, allowedHost) {
     // for some reason broken when imported through webpack. If you just want to
     // use an image, put it in `src` and `import` it from JavaScript instead.
     contentBase: paths.appPublic,
+    
     contentBasePublicPath: paths.publicUrlOrPath,
     // By default files from `contentBase` will not trigger a page reload.
     watchContentBase: true,
